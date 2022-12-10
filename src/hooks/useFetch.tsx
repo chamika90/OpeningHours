@@ -12,15 +12,10 @@ const useFetch = ({url}: useFetchProps) => {
     fetch(url)
       .then(response => response.json())
       .then(result => {
-        //setData(result);
-        console.log('result ---> ', result);
-
-        setError('err');
+        setData(result);
         setLoadingStatus(false);
       })
       .catch(err => {
-        console.log('err ---> ', err);
-
         setError(err);
         setLoadingStatus(false);
       });
