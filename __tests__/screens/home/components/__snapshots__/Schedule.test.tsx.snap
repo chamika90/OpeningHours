@@ -58,6 +58,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -83,6 +84,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -129,6 +131,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -154,6 +157,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -200,6 +204,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -225,6 +230,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -271,6 +277,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -296,6 +303,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -342,6 +350,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -367,6 +376,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -413,6 +423,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -426,8 +437,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               Object {
                 "color": "#5BCB02",
                 "fontFamily": "Roboto-Bold",
-                "fontSize": 12,
-                "marginLeft": 5,
+                "fontSize": 10,
+                "marginLeft": 6,
                 "textAlign": "center",
               }
             }
@@ -451,6 +462,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }
@@ -497,6 +509,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           <Text
             style={
               Object {
+                "color": "#202125",
                 "fontFamily": "Roboto-Medium",
                 "fontSize": 12,
                 "textAlign": "center",
@@ -522,6 +535,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
               adjustsFontSizeToFit={true}
               style={
                 Object {
+                  "color": "#202125",
                   "fontFamily": "Roboto-Regular",
                   "fontSize": 12,
                 }

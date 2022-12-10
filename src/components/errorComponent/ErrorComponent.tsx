@@ -9,7 +9,11 @@ type ErrorComponentProps = {
 };
 
 const ErrorComponent = ({message}: ErrorComponentProps) => {
-  return <Text style={styles.errorMessage}>{message} </Text>;
+  return (
+    <Text testID="error" style={styles.errorMessage}>
+      {message}
+    </Text>
+  );
 };
 
 export default ErrorComponent;
