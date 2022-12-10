@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import OpeningHours from './components/openingHours/OpeningHours';
+import OpeningHours from './components/OpeningHours/OpeningHours';
 import {theme} from '../../config/theme';
 const {colors} = theme;
 
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     width: '100%',
     height: '100%',
-    display: 'flex',
+    flex: 1,
     justifyContent: 'center',
     backgroundColor: colors.primaryBackgroundColor,
   },

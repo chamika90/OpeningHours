@@ -27,7 +27,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Home from './src/screens/home/Home';
+import Home from './src/screens/HomeScreen/Home';
 import AppNavigator from './src/navigation';
 
 const App = () => {

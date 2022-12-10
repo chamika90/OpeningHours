@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import {render, within} from '@testing-library/react-native';
-import Schedule from '../../../../../../src/screens/home/components/openingHours/components/Schedule';
+import Schedule from '../../../../src/screens/HomeScreen/components/OpeningHours/Schedule';
 
 describe('Schedule ', () => {
   it('should match the schedule snapshot', () => {

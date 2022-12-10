@@ -29,6 +29,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
   renderItem={[Function]}
   scrollEventThrottle={50}
   stickyHeaderIndices={Array []}
+  testID="schedule"
   viewabilityConfigCallbackPairs={Array []}
 >
   <View>
@@ -58,7 +59,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
@@ -78,6 +80,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
               testID="hoursListText"
             >
               10 AM - 1 PM,3 PM - 11 PM
@@ -121,7 +130,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
@@ -141,6 +151,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
               testID="hoursListText"
             >
               3 PM - 11 PM
@@ -184,7 +201,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
@@ -204,6 +222,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
               testID="hoursListText"
             >
               10 AM - 1 PM,3 PM - 11 PM
@@ -247,7 +272,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
@@ -267,6 +293,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
               testID="hoursListText"
             >
               10 AM - 1 PM,3 PM - 11 PM
@@ -310,11 +343,83 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
             Friday
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "flex": 3,
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+            }
+          }
+          testID="openHoursList"
+        >
+          <View>
+            <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
+              testID="hoursListText"
+            >
+              10 AM - 1 PM
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#EEEEEE",
+            "height": 1,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "paddingVertical": 10,
+          }
+        }
+        testID="scheduleRow"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 2,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 12,
+                "textAlign": "center",
+              }
+            }
+          >
+            Saturday
           </Text>
           <Text
             style={
@@ -323,6 +428,7 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
                 "fontFamily": "Roboto-Bold",
                 "fontSize": 12,
                 "marginLeft": 5,
+                "textAlign": "center",
               }
             }
           >
@@ -342,69 +448,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
-              testID="hoursListText"
-            >
-              10 AM - 1 PM
-            </Text>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "backgroundColor": "#EEEEEE",
-            "height": 1,
-            "width": "100%",
-          }
-        }
-      />
-    </View>
-    <View
-      onLayout={[Function]}
-      style={null}
-    >
-      <View
-        style={
-          Object {
-            "flexDirection": "row",
-            "paddingVertical": 10,
-          }
-        }
-        testID="scheduleRow"
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flex": 2,
-              "flexDirection": "row",
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
               }
-            }
-          >
-            Saturday
-          </Text>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "flex-end",
-              "flex": 3,
-              "flexDirection": "row",
-              "justifyContent": "flex-end",
-            }
-          }
-          testID="openHoursList"
-        >
-          <View>
-            <Text
               testID="hoursListText"
             >
               10 AM - 1 PM
@@ -448,7 +498,8 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 16,
+                "fontSize": 12,
+                "textAlign": "center",
               }
             }
           >
@@ -468,6 +519,13 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
         >
           <View>
             <Text
+              adjustsFontSizeToFit={true}
+              style={
+                Object {
+                  "fontFamily": "Roboto-Regular",
+                  "fontSize": 12,
+                }
+              }
               testID="hoursListText"
             >
               3 PM - 11 PM

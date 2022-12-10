@@ -19,6 +19,7 @@ type LoaderProps = {
 const Loader = ({isLoading, size, color, style}: LoaderProps) => {
   return (
     <ActivityIndicator
+      testID="loader"
       style={style ?? styles.loader}
       animating={isLoading}
       size={size ?? 'large'}

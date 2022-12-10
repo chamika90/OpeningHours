@@ -1,10 +1,10 @@
 import React, {useMemo} from 'react';
 import {FlatList, Text, View} from 'react-native';
-import {days} from '../../../../../config/constants';
+import {days} from '../../../../config/constants';
 import {
   convertFirstLetterToUpperCase,
   getCurrentDay,
-} from '../../../../../helper/utils';
+} from '../../../../helper/utils';
 import {styles} from './styles';
 
 export type ScheduleProps = {
@@ -33,7 +33,12 @@ const Schedule = ({schedule}: {schedule: ScheduleProps}) => {
     return (
       <View>
         {(hoursList !== '' && (
-          <Text testID="hoursListText">{hoursList}</Text>
+          <Text
+            style={styles.timeDurationText}
+            adjustsFontSizeToFit
+            testID="hoursListText">
+            {hoursList}
+          </Text>
         )) || (
           <Text testID="closeText" style={styles.closeText}>
             Closed
@@ -68,6 +73,7 @@ const Schedule = ({schedule}: {schedule: ScheduleProps}) => {
 
   return (
     <FlatList
+      testID="schedule"
       data={days}
       ItemSeparatorComponent={() => <ListSeporator />}
       renderItem={({item}) => <ScheduleRow day={item} />}

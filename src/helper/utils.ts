@@ -19,6 +19,4 @@ export const convertFirstLetterToUpperCase = (word: string) => {
   return wordInFirstLetterCapital;
 };
 
-export const getCurrentDay = () => {
-  return moment().format('dddd').toLowerCase();
-};
+export const getCurrentDay = () => moment().format('dddd').toLowerCase();
