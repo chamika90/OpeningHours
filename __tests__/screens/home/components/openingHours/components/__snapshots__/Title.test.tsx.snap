@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title  should match the title snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "flexDirection": "column",
+      "marginBottom": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "marginRight": 10,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          Array [
+            Object {
+              "color": "#A1A2A4",
+              "fontSize": 18,
+            },
+            undefined,
+            Object {
+              "fontFamily": "FontAwesome5Free-Regular",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#202125",
+          "fontFamily": "Roboto-Bold",
+          "fontSize": 24,
+        }
+      }
+      testID="title"
+    >
+      Open hours
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#202125",
+        "height": 1,
+        "marginTop": 10,
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;
