@@ -8,9 +8,9 @@ The operating hours of a restaurant are displayed in this app.
 
 ## Technologies used
 
-React Native
-Typescript
-Jest
+- React Native
+- Typescript
+- Jest
 
 ## Setup
 
