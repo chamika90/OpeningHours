@@ -2,12 +2,12 @@ export const NAVIGATION_SCREENS = {
   HOME: 'Home',
 };
 
-export const HourType = {
-  Open: 'open',
-  Close: 'close',
+export const HOUR_TYPE = {
+  OPEN: 'open',
+  CLOSE: 'close',
 };
 
-export const days = [
+export const DAYS = [
   'monday',
   'tuesday',
   'wednesday',

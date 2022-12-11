@@ -17,4 +17,9 @@ export const theme = {
     primaryIconColor: Colors.GRAY_3,
     primaryHeaderColor: Colors.BLUE_2,
   },
+  iconSizes: {
+    large: 25,
+    medium: 18,
+    small: 18,
+  },
 };

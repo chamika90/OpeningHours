@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {convertSecondsToTimeString} from '../helper/utils';
-import {API_ENDPOINTS, days, HourType} from '../config/constants';
+import {API_ENDPOINTS, DAYS, HOUR_TYPE} from '../config/constants';
 import useFetch from './useFetch';
 import {
   OpeningHour,
@@ -33,15 +33,15 @@ export const useRestaurantOpenHours = () => {
   }, [openHours]);
 
   const getPreviousDay = (index: number) => {
-    return index === 0 ? days[days.length - 1] : days[index - 1];
+    return index === 0 ? DAYS[DAYS.length - 1] : DAYS[index - 1];
   };
 
   const setupOpeningHours = (schedule: weeklyScheduleProps) => {
     let weeklyOpenHours = schedule;
-    days.forEach((day, index) => {
+    DAYS.forEach((day, index) => {
       if (
         schedule[day].length > 0 &&
-        schedule[day][0].type === HourType.Close
+        schedule[day][0].type === HOUR_TYPE.CLOSE
       ) {
         const previousDay = getPreviousDay(index);
         weeklyOpenHours[previousDay].push(schedule[day][0]);
@@ -61,12 +61,12 @@ export const useRestaurantOpenHours = () => {
 
   const structureTime = (weeklyOpenHours: weeklyScheduleProps) => {
     let structuredList = {};
-    days.forEach(day => {
+    DAYS.forEach(day => {
       const openHoursList = weeklyOpenHours[day];
       const durationList: Array<string> = [];
       if (openHoursList.length > 0) {
         openHoursList.forEach((openHourObj, index: number) => {
-          if (openHourObj.type === HourType.Open) {
+          if (openHourObj.type === HOUR_TYPE.OPEN) {
             const openDuration = getTimeDuration(
               openHourObj.value,
               openHoursList[index + 1].value,

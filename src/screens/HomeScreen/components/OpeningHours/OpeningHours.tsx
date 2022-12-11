@@ -7,7 +7,7 @@ import Loader from '../../../../components/Loader/Loader';
 import Schedule from './Schedule';
 import {styles} from './styles';
 import ErrorComponent from '../../../../components/ErrorComponent/ErrorComponent';
-const {colors} = theme;
+const {colors, iconSizes} = theme;
 
 const OpeningHours = () => {
   const {openHours, isDataLoading, error} = useRestaurantOpenHours();
@@ -20,7 +20,11 @@ const OpeningHours = () => {
       <View style={styles.header}>
         <View style={styles.titleContainer}>
           <View style={styles.headerIcon}>
-            <Icon name="clock" size={18} color={colors.primaryIconColor} />
+            <Icon
+              name="clock"
+              size={iconSizes.small}
+              color={colors.primaryIconColor}
+            />
           </View>
           <Text testID="title" style={styles.title}>
             {title}
@@ -37,7 +41,7 @@ const OpeningHours = () => {
       {openHours && <Schedule schedule={openHours} />}
       <Loader isLoading={isDataLoading} />
       {error && (
-        <ErrorComponent message="Something went wrong. please try again later" />
+        <ErrorComponent message="Something went wrong. Please try again later" />
       )}
     </View>
   );

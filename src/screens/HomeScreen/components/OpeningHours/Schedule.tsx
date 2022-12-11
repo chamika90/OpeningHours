@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
 import {FlatList, Text, View} from 'react-native';
-import {days} from '../../../../config/constants';
+import {DAYS} from '../../../../config/constants';
 import {
   convertFirstLetterToUpperCase,
   getCurrentDay,
@@ -74,7 +74,7 @@ const Schedule = ({schedule}: {schedule: ScheduleProps}) => {
   return (
     <FlatList
       testID="schedule"
-      data={days}
+      data={DAYS}
       ItemSeparatorComponent={() => <ListSeporator />}
       renderItem={({item}) => <ScheduleRow day={item} />}
       ListFooterComponent={() => <ListSeporator />}
