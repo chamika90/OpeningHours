@@ -7,7 +7,6 @@ The operating hours of a restaurant are displayed in this app.
 
 ```
 mock data reference : https://run.mocky.io/v3/c853938a-0e94-4c29-948c-0d95762c77bc
-
 ```
 ## Technologies used
 
