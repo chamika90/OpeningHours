@@ -30,7 +30,7 @@ describe('Schedule ', () => {
     };
     const {getAllByTestId} = render(<Schedule schedule={scheduleProps} />);
     const result = getAllByTestId('scheduleRow');
-    expect(result.length).toBe(7); //closeText
+    expect(result.length).toBe(7);
   });
 
   it('should render close for monday', () => {

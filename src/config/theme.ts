@@ -8,7 +8,7 @@ export const theme = {
 
     primaryTextColor: Colors.BLACK,
     secondaryTextColor: Colors.GRAY_3,
-    textGreenColor: Colors.GREEN, //tODO
+    textGreenColor: Colors.GREEN,
 
     primaryShadowColor: Colors.GRAY_3,
 

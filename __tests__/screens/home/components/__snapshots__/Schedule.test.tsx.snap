@@ -432,19 +432,6 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
           >
             Saturday
           </Text>
-          <Text
-            style={
-              Object {
-                "color": "#5BCB02",
-                "fontFamily": "Roboto-Bold",
-                "fontSize": 10,
-                "marginLeft": 6,
-                "textAlign": "center",
-              }
-            }
-          >
-            TODAY
-          </Text>
         </View>
         <View
           style={
@@ -517,6 +504,19 @@ exports[`Schedule  should match the schedule snapshot 1`] = `
             }
           >
             Sunday
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#5BCB02",
+                "fontFamily": "Roboto-Bold",
+                "fontSize": 10,
+                "marginLeft": 6,
+                "textAlign": "center",
+              }
+            }
+          >
+            TODAY
           </Text>
         </View>
         <View

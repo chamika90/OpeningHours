@@ -7,7 +7,6 @@ import Loader from '../../../../components/Loader/Loader';
 import Schedule from './Schedule';
 import {styles} from './styles';
 import ErrorComponent from '../../../../components/ErrorComponent/ErrorComponent';
-
 const {colors} = theme;
 
 const OpeningHours = () => {

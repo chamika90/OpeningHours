@@ -1,57 +1,25 @@
 import {useEffect, useState} from 'react';
 import {convertSecondsToTimeString} from '../helper/utils';
-import {days, HourType} from '../config/constants';
+import {API_ENDPOINTS, days, HourType} from '../config/constants';
 import useFetch from './useFetch';
 import {
   OpeningHour,
   ScheduleProps,
 } from '../screens/HomeScreen/components/OpeningHours/Schedule';
 
-const RESTAURANT_INFO_ENDPOINT =
-  'https://run.mocky.io/v3/b938650b-611d-497a-addc-923cf5ad7ad1';
-
 type weeklyScheduleProps = {
   [dayOfWeek: string]: Array<OpeningHour>;
 };
 
 export const useRestaurantOpenHours = () => {
-  const {data, isLoading, error} = useFetch({url: RESTAURANT_INFO_ENDPOINT});
+  const {data, isLoading, error} = useFetch({url: API_ENDPOINTS.OPEN_HOURS});
   const [isDataLoading, setIsDataLoading] = useState(true);
 
   const [openHours, setOpenHours] = useState<ScheduleProps>();
 
   useEffect(() => {
     if (data) {
-      const dummyData = {
-        friday: [{type: 'open', value: 36000}],
-        monday: [],
-        saturday: [
-          {type: 'close', value: 3600},
-          {type: 'open', value: 36800},
-        ],
-        sunday: [
-          {type: 'close', value: 3600},
-          {type: 'open', value: 43200},
-          {type: 'close', value: 75600},
-        ],
-        thursday: [
-          {type: 'open', value: 43200},
-          {type: 'close', value: 75600},
-          {type: 'open', value: 36000},
-          {type: 'close', value: 64800},
-        ],
-        tuesday: [
-          {type: 'open', value: 36000},
-          {type: 'close', value: 64800},
-        ],
-        wednesday: [
-          {type: 'open', value: 43200},
-          {type: 'close', value: 75600},
-          {type: 'open', value: 36000},
-          {type: 'close', value: 64800},
-        ],
-      };
-      setupOpeningHours(dummyData);
+      setupOpeningHours(data);
     }
     if (error) {
       setIsDataLoading(isLoading);
